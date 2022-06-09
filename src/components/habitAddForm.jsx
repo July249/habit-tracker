@@ -6,9 +6,9 @@ const HabitAddForm = memo((props) => {
 
   const onSubmit = (event) => {
     event.preventDefault(); // 새로고침 방지
-    const name = this.inputRef.current.value;
+    const name = inputRef.current.value;
     name && props.onAdd(name);
-    this.formRef.current.reset();
+    formRef.current.reset();
   };
 
   return (
